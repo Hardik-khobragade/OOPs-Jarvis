@@ -98,3 +98,47 @@ College
    ↓
 Student
 */
+
+
+#include<iostream>
+using namespace std;
+//parent class
+class Animal{
+   public:
+      void walk()
+      {
+         cout<<"Walked"<<endl;
+      }
+   protected:
+      void run(){
+         cout<<"run"<<endl;
+      }
+};
+
+
+class Dog : public Animal{
+   public:
+      void bark(){
+         cout<<"Bhow bhow"<<endl;
+      }
+      void run(){
+         run();
+      }
+};
+
+
+class cat:public Animal{
+
+};
+
+//animal->dog->tomyy
+
+int main()
+{
+   Dog tommy;
+   tommy.walk();
+   tommy.bark();
+
+   tommy.run();
+
+}

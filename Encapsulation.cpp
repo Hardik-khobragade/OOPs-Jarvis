@@ -81,3 +81,44 @@ Destructor:
     cleanup code
 }
 */
+#include<iostream>
+using namespace std;
+
+class Pen
+{
+    private:
+        int size;
+    public:
+    Pen(){
+        cout<<"Pen is created"<<endl;
+    }
+    ~Pen(){
+    cout<<"Pen is destoyed"<<endl;
+    }
+
+    string color;
+    int price;
+    void showColor(){
+        cout<<"hello";
+    }
+};
+//class classname {};
+//class blueprint of object
+//object realtime entity
+
+//how to create class
+
+int main()
+{
+    Pen cello;
+    cello.price = 5;
+    cout<<cello.price<<endl;
+    cello.price=10;
+    cout<<cello.price<<endl;
+  
+}
+
+
+//animal -- proprty walk,talk
+//Dog  ---proprt walk,bark,jump
+//cat ---protty walk,jump

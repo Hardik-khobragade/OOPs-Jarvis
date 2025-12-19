@@ -201,7 +201,7 @@ int main()
 
 */
 
-/*
+
 #include <iostream>
 using namespace std;
 
@@ -236,4 +236,30 @@ int main()
 }
 
 
-*/
+
+
+
+// sum(2,3) sum(2,3,4)
+
+// #include<iostream> 
+// using namespace std;
+// class Operations
+// {
+//    public:
+//       int sum(int a,int b)
+//       {
+//          return a+b;
+//       }
+//          int sum(int a,int b,int c)
+//       {
+//          return a+b+c;
+//       }
+// };
+
+// int main()
+// {
+//    Operations op;
+//    cout<<op.sum(2,3)<<endl;
+//       cout<<op.sum(2,3,2)<<endl;
+//    return 0;
+// }

@@ -142,7 +142,7 @@ Pure Virtual Function:
 - No body in base class
 - Overriding is compulsory
 */
-/*
+
 #include <iostream>
 using namespace std;
 
@@ -172,14 +172,15 @@ public:
 
 int main()
 {
-    University* u;   // base class pointer
+    University u;   // base class pointer
     College c;       // derived class object
 
-    u = &c;          // base pointer → derived object
-    u->showDetails(); // runtime polymorphism
-
+    u = c;          // base pointer → derived object
+    u.showDetails(); // runtime polymorphism
+      c.showDetails();
+   
     return 0;
 }
 
 
-*/
+
